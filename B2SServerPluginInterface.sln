@@ -3,18 +3,56 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B2SServerPluginInterface", "B2SServerPluginInterface\B2SServerPluginInterface.csproj", "{FDB019C2-E19D-4A9F-93A6-3BEF5DEEF300}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{07EBFA67-352F-4010-843C-14F8A5627D92}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Documentation", "Documentation\Documentation.csproj", "{9903D498-0A38-4125-8DFD-F5AC3921B93F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DoxygenConfig", "DoxygenConfig", "{8CD6D9E9-AD5F-488A-B1CC-4B353B81D2AE}"
+	ProjectSection(SolutionItems) = preProject
+		DoxygenConfig\DoxygenConfigFile = DoxygenConfig\DoxygenConfigFile
+		DoxygenConfig\footer.html = DoxygenConfig\footer.html
+		DoxygenConfig\header.html = DoxygenConfig\header.html
+		DoxygenConfig\style.css = DoxygenConfig\style.css
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FDB019C2-E19D-4A9F-93A6-3BEF5DEEF300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FDB019C2-E19D-4A9F-93A6-3BEF5DEEF300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDB019C2-E19D-4A9F-93A6-3BEF5DEEF300}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{FDB019C2-E19D-4A9F-93A6-3BEF5DEEF300}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{FDB019C2-E19D-4A9F-93A6-3BEF5DEEF300}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{FDB019C2-E19D-4A9F-93A6-3BEF5DEEF300}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDB019C2-E19D-4A9F-93A6-3BEF5DEEF300}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDB019C2-E19D-4A9F-93A6-3BEF5DEEF300}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{FDB019C2-E19D-4A9F-93A6-3BEF5DEEF300}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{FDB019C2-E19D-4A9F-93A6-3BEF5DEEF300}.Release|x86.ActiveCfg = Release|Any CPU
+		{9903D498-0A38-4125-8DFD-F5AC3921B93F}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{9903D498-0A38-4125-8DFD-F5AC3921B93F}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{9903D498-0A38-4125-8DFD-F5AC3921B93F}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{9903D498-0A38-4125-8DFD-F5AC3921B93F}.Debug|x86.ActiveCfg = Debug|x86
+		{9903D498-0A38-4125-8DFD-F5AC3921B93F}.Debug|x86.Build.0 = Debug|x86
+		{9903D498-0A38-4125-8DFD-F5AC3921B93F}.Release|Any CPU.ActiveCfg = Release|x86
+		{9903D498-0A38-4125-8DFD-F5AC3921B93F}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{9903D498-0A38-4125-8DFD-F5AC3921B93F}.Release|Mixed Platforms.Build.0 = Release|x86
+		{9903D498-0A38-4125-8DFD-F5AC3921B93F}.Release|x86.ActiveCfg = Release|x86
+		{9903D498-0A38-4125-8DFD-F5AC3921B93F}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8CD6D9E9-AD5F-488A-B1CC-4B353B81D2AE} = {07EBFA67-352F-4010-843C-14F8A5627D92}
 	EndGlobalSection
 EndGlobal
