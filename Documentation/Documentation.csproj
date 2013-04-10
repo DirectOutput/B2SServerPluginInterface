@@ -43,6 +43,9 @@
     <Content Include="img\swisslizard.png" />
     <None Include="99_MainPageAndAbout.md" />
     <Content Include="img\Herweh.png" />
+    <None Include="10_Download and Using.md" />
+    <None Include="30_Interfaces.md" />
+    <None Include="80_Changing and Extending.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
