@@ -1,12 +1,12 @@
 ﻿
-namespace B2S
+namespace B2SServerPluginInterface
 {
     /// <summary>
     /// Interface for plugins for the B2S Server.<br/>
     /// All plugins must implement this interface to be recognized by the B2S Server. 
     /// In addition they also have to export the class implementing the interface using the following attribute  [Export(typeof(B2S.IDirectPlugin))] in c# or   &lt;Export(GetType(B2S.IDirectPlugin))&gt; for VB.net.
-    /// Be sure to handle all exceptions of your plugin, since the B2S Server will deactivate plugins throwing unhandled exceptions.<br/>
-    /// Please refer to the docu on the DirectOutput framework for more info on plugins.
+    /// Please refer to the documentation of the B2S.Server Sample Plugin Project (http://directoutput.github.com/B2SServerSamplePlugin/) for more information on plugins.
+    /// \remark Be sure to handle all exceptions of your plugin, since the B2S Server will deactivate plugins throwing unhandled exceptions.<br/>
     /// </summary>
     public interface IDirectPlugin
     {
@@ -55,6 +55,7 @@ namespace B2S
 
         /// <summary>
         /// This method is called, when new data from Pinmame is available.
+        /// \remark Make implementations of this method as fast as possible. Delays in this method will slow doen the whole virtual pinball system. The best solution is to put the data in a queue and process it in a independent thread.
         /// </summary>
         /// <param name="TableElementTypeChar">Char representing the table element type (S=Solenoid, W=Switch, L=Lamp, M=Mech, G=GI).</param>
         /// <param name="Number">The number of the table element.</param>

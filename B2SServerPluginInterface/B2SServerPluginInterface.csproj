@@ -8,7 +8,7 @@
     <ProjectGuid>{FDB019C2-E19D-4A9F-93A6-3BEF5DEEF300}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>B2SServerPlugin</RootNamespace>
+    <RootNamespace>B2SServerPluginInterface</RootNamespace>
     <AssemblyName>B2SServerPluginInterface</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="B2SServerPluginInterface.cs" />
     <Compile Include="IDirectPlugin.cs" />
     <Compile Include="IDirectPluginFrontend.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -6,15 +6,15 @@
 The B2SServerPluginInterface.dll can be downloaded as follows:
 
 - Download from .............................
-- The B2SServerPluginInterface.dll is also part of the deployment packege of the B2S.Server.
+- The B2SServerPluginInterface.dll is also part of the deployment package of the B2S.Server.
 
-\section downloadusing_download Download source code
+\section downloadusing_downloadsource Download source code
 
 The source code of the B2SServerPluginInterface.dll can be aquired from GitHub <a href="https://github.com/DirectOutput/B2SServerPluginInterface">https://github.com/DirectOutput/B2SServerPluginInterface</a>.
 
-If you are planning to implement your own plugin, do <b>NOT</b> use you self compiled version of the interface dll. Download the binary version to avoid compatibility issues.
+If you are planning to implement your own plugin, do <b>NOT</b> use a self compiled version of the interface dll. Download the binary version to avoid compatibility issues.
 
-\section downloadusing_download Using the dll
+\section downloadusing_using Using the dll
 
 Use the dll to implement your own B2S.Server plugin. The first steps are:
 
