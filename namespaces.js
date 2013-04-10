@@ -1,4 +1,4 @@
 var namespaces =
 [
-    [ "B2S", "namespace_b2_s.html", null ]
+    [ "B2SServerPluginInterface", "namespace_b2_s_server_plugin_interface.html", null ]
 ];

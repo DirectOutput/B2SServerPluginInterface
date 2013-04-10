@@ -1,6 +1,16 @@
 var NAVTREE =
 [
   [ "B2S.Server Plugin Interface", "index.html", [
+    [ "Download and using the B2SServerPluginInterface.dll", "downloadusing.html", [
+      [ "Download B2SServerPluginInterface.dll", "downloadusing.html#downloadusing_download", null ],
+      [ "Download source code", "downloadusing.html#downloadusing_downloadsource", null ],
+      [ "Using the dll", "downloadusing.html#downloadusing_using", null ]
+    ] ],
+    [ "Interfaces in the B2SServerPluginInterface.dll", "interfaces.html", [
+      [ "IDirectPlugin Interface", "interfaces.html#interfaces_idirectplugin", null ],
+      [ "IDirectPluginFrontEnd Interface", "interfaces.html#interfaces_idirectpluginfrontend", null ]
+    ] ],
+    [ "Changing and extending the library", "change.html", null ],
     [ "About", "md_99__main_page_and_about.html", null ],
     [ "Packages", null, [
       [ "Packages", "namespaces.html", "namespaces" ]
