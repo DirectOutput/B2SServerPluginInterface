@@ -43,6 +43,7 @@
     <Compile Include="B2SServerPluginInterface.cs" />
     <Compile Include="IDirectPlugin.cs" />
     <Compile Include="IDirectPluginFrontend.cs" />
+    <Compile Include="IDirectPluginPinMame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

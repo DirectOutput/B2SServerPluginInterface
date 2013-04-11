@@ -22,7 +22,7 @@ Use the dll to implement your own B2S.Server plugin. The first steps are:
 - Add a reference the the B2SServerPluginInterface.dll you have downloaded.
 - Add a reference to System.ComponentModel.Composition.
 - Create a plugin class and implement at least the IDirectPlugin interface.
-- Decorate the plugin class with [Export(typeof(B2S.IDirectPlugin))] for C# or &lt;Export(GetType(B2S.IDirectPlugin))&gt; for VB.net.
+- Decorate the plugin class with [Export(typeof(B2SServerPluginInterface.IDirectPlugin))] for C# or &lt;Export(GetType(B2SServerPluginInterface.IDirectPlugin))&gt; for VB.net.
 
 More information on using the B2SServerPluginInterface.dll to create your own plugins can be found in the <a href="http://directoutput.github.com/B2SServerSamplePlugin/">B2S.Server Sample Plugin project</a>.
 
