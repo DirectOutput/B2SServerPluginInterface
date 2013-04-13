@@ -2,7 +2,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>B2S.Server Plugin Interface: B2SServerPluginInterface.IDirectPluginFrontend Interface Reference</title>
+<title>B2S.Server Plugin Interface: B2SServerPluginInterface.IDirectPluginPinMame Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_frontend.html','');});
+$(document).ready(function(){initNavTree('interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_pin_mame.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -108,35 +108,46 @@ $(document).ready(function(){initNavTree('interface_b2_s_server_plugin_interface
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_frontend-members.html">List of all members</a>  </div>
+<a href="interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_pin_mame-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">B2SServerPluginInterface.IDirectPluginFrontend Interface Reference</div>  </div>
+<div class="title">B2SServerPluginInterface.IDirectPluginPinMame Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Optional interface for plugins providing some kind of frontend (e.g. a configuration window).<br/>
- If a plugin has no frontend, it is not necessary to implement this interface.  
- <a href="interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_frontend.html#details">More...</a></p>
+<p>Optional interface for plugins, needing updates on important PinMame calls.<br/>
+ If a plugin does not need these updates, the interface does not need to be implemented.<br/>
+  
+ <a href="interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_pin_mame.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2395e3c6f9a1e5a62b43169ec83efc56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_frontend.html#a2395e3c6f9a1e5a62b43169ec83efc56">PluginShowFrontend</a> ()</td></tr>
-<tr class="memdesc:a2395e3c6f9a1e5a62b43169ec83efc56"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called by the plugin host (B2S.Server) to tell the plugin to open its frontend.  <a href="#a2395e3c6f9a1e5a62b43169ec83efc56">More...</a><br/></td></tr>
-<tr class="separator:a2395e3c6f9a1e5a62b43169ec83efc56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92416bf29393dff9ee615d94221e6f89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_pin_mame.html#a92416bf29393dff9ee615d94221e6f89">PinMameRun</a> ()</td></tr>
+<tr class="memdesc:a92416bf29393dff9ee615d94221e6f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called, when the Run method of PinMame gets called.  <a href="#a92416bf29393dff9ee615d94221e6f89">More...</a><br/></td></tr>
+<tr class="separator:a92416bf29393dff9ee615d94221e6f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9597e01647f3eee974eaeadf426e8e8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_pin_mame.html#a9597e01647f3eee974eaeadf426e8e8d">PinMamePause</a> ()</td></tr>
+<tr class="memdesc:a9597e01647f3eee974eaeadf426e8e8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called, when the property Pause of Pinmame gets set to true.  <a href="#a9597e01647f3eee974eaeadf426e8e8d">More...</a><br/></td></tr>
+<tr class="separator:a9597e01647f3eee974eaeadf426e8e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2da015ae36530f9648b6384decb0655e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_pin_mame.html#a2da015ae36530f9648b6384decb0655e">PinMameContinue</a> ()</td></tr>
+<tr class="memdesc:a2da015ae36530f9648b6384decb0655e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called, when the property Pause of Pinmame gets set to false.  <a href="#a2da015ae36530f9648b6384decb0655e">More...</a><br/></td></tr>
+<tr class="separator:a2da015ae36530f9648b6384decb0655e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac378da2a4f2f3ea4b6bafe0b65eaf6bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_pin_mame.html#ac378da2a4f2f3ea4b6bafe0b65eaf6bf">PinMameStop</a> ()</td></tr>
+<tr class="memdesc:ac378da2a4f2f3ea4b6bafe0b65eaf6bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called, when the Stop method of Pinmame is called.  <a href="#ac378da2a4f2f3ea4b6bafe0b65eaf6bf">More...</a><br/></td></tr>
+<tr class="separator:ac378da2a4f2f3ea4b6bafe0b65eaf6bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Optional interface for plugins providing some kind of frontend (e.g. a configuration window).<br/>
- If a plugin has no frontend, it is not necessary to implement this interface. </p>
+<div class="textblock"><p>Optional interface for plugins, needing updates on important PinMame calls.<br/>
+ If a plugin does not need these updates, the interface does not need to be implemented.<br/>
+ </p>
 <dl class="section remark"><dt>Remarks</dt><dd>Remember that every plugin does also habe to implement the IDrectPlugin interface to make it recognizeable by the plugin host (B2S.Server). </dd></dl>
 
-<p>Definition at line <a class="el" href="_i_direct_plugin_frontend_8cs_source.html#l00008">8</a> of file <a class="el" href="_i_direct_plugin_frontend_8cs_source.html">IDirectPluginFrontend.cs</a>.</p>
+<p>Definition at line <a class="el" href="_i_direct_plugin_pin_mame_8cs_source.html#l00009">9</a> of file <a class="el" href="_i_direct_plugin_pin_mame_8cs_source.html">IDirectPluginPinMame.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a2395e3c6f9a1e5a62b43169ec83efc56"></a>
+<a class="anchor" id="a2da015ae36530f9648b6384decb0655e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void B2SServerPluginInterface.IDirectPluginFrontend.PluginShowFrontend </td>
+          <td class="memname">void B2SServerPluginInterface.IDirectPluginPinMame.PinMameContinue </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -144,12 +155,63 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This method is called by the plugin host (B2S.Server) to tell the plugin to open its frontend. </p>
+<p>This method is called, when the property Pause of Pinmame gets set to false. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9597e01647f3eee974eaeadf426e8e8d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void B2SServerPluginInterface.IDirectPluginPinMame.PinMamePause </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method is called, when the property Pause of Pinmame gets set to true. </p>
+
+</div>
+</div>
+<a class="anchor" id="a92416bf29393dff9ee615d94221e6f89"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void B2SServerPluginInterface.IDirectPluginPinMame.PinMameRun </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method is called, when the Run method of PinMame gets called. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac378da2a4f2f3ea4b6bafe0b65eaf6bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void B2SServerPluginInterface.IDirectPluginPinMame.PinMameStop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method is called, when the Stop method of Pinmame is called. </p>
 
 </div>
 </div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
-<li>C:/Users/Tom/Documents/GitHub/B2SServerPluginInterface/B2SServerPluginInterface/<a class="el" href="_i_direct_plugin_frontend_8cs_source.html">IDirectPluginFrontend.cs</a></li>
+<li>C:/Users/Tom/Documents/GitHub/B2SServerPluginInterface/B2SServerPluginInterface/<a class="el" href="_i_direct_plugin_pin_mame_8cs_source.html">IDirectPluginPinMame.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -157,7 +219,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_b2_s_server_plugin_interface.html">B2SServerPluginInterface</a></li><li class="navelem"><a class="el" href="interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_frontend.html">IDirectPluginFrontend</a></li>
+    <li class="navelem"><a class="el" href="namespace_b2_s_server_plugin_interface.html">B2SServerPluginInterface</a></li><li class="navelem"><a class="el" href="interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_pin_mame.html">IDirectPluginPinMame</a></li>
     <li class="footer">Generated on Sat Apr 13 2013 17:04:21 for B2S.Server Plugin Interface by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>

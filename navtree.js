@@ -8,6 +8,7 @@ var NAVTREE =
     ] ],
     [ "Interfaces in the B2SServerPluginInterface.dll", "interfaces.html", [
       [ "IDirectPlugin Interface", "interfaces.html#interfaces_idirectplugin", null ],
+      [ "IDirectPluginPinMame Interface", "interfaces.html#interfaces_idirectpluginpinmame", null ],
       [ "IDirectPluginFrontEnd Interface", "interfaces.html#interfaces_idirectpluginfrontend", null ]
     ] ],
     [ "Changing and extending the library", "change.html", null ],

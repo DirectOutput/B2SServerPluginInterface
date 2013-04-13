@@ -7,5 +7,8 @@ var dir_79a924eb60f5d1318026ae48cf8e4079 =
     ] ],
     [ "IDirectPluginFrontend.cs", "_i_direct_plugin_frontend_8cs.html", [
       [ "IDirectPluginFrontend", "interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_frontend.html", "interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_frontend" ]
+    ] ],
+    [ "IDirectPluginPinMame.cs", "_i_direct_plugin_pin_mame_8cs.html", [
+      [ "IDirectPluginPinMame", "interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_pin_mame.html", "interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_pin_mame" ]
     ] ]
 ];
