@@ -54,7 +54,7 @@ The optional Owner parameter (make sure your implementation does also accept cal
 ~~~~~~~~~~~~~~~~~~~~~~~~~(.cs)
     public interface IDirectPluginFrontend
     {
-        void PluginShowFrontend(IWin32Window Owner = null);
+        void PluginShowFrontend(Form Owner = null);
     }
 ~~~~~~~~~~~~~~~~~~~~~~~~
 

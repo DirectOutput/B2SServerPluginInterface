@@ -11,7 +11,7 @@ namespace B2SServerPluginInterface
         /// <summary>
         /// This method is called by the plugin host (B2S.Server) to tell the plugin to open its frontend.
         /// </summary>
-        /// <param name="Owner">(optional) The owner window for the frontend.</param>
-        void PluginShowFrontend(IWin32Window Owner = null);
+        /// <param name="Owner">(optional) The owner window for the frontend.<br/>Make sure you also support null/nothing for this parameter.</param>
+        void PluginShowFrontend(Form Owner = null);
     }
 }

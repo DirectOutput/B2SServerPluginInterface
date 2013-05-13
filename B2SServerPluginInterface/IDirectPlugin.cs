@@ -25,15 +25,13 @@ namespace B2SServerPluginInterface
         void PluginFinish();
 
         /// <summary>
-        /// Gets the name of the plugin.
+        /// Gets the name of the plugin. <br/>
+        /// It is recommended to add the version/build number of your plugin to the name, so different version can easily be recognized be the end user.
         /// </summary>
         /// <value>
         /// The name of the plugin.
         /// </value>
         string Name { get; }
-
-
-
 
         /// <summary>
         /// This method is called, when new data from Pinmame is available.
