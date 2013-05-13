@@ -49,10 +49,12 @@ See the section on classes for more information about this interface and the des
 
 If a plugin has some frontend (e.g. configuration window) it is a good choice to implement the IDirectPluginFrontEnd interface. This interface will allow the host application to open the frontend when necessary.
 
+The optional Owner parameter (make sure your implementation does also accept calls with null for the parameter) is used to pass a reference to the owner window for the frontend. This allows to ensure that your frontend windows are centered on the call window and/or that the frontend windows are put on the same screen as the calling appilcation.
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~(.cs)
     public interface IDirectPluginFrontend
     {
-        void PluginShowFrontend();
+        void PluginShowFrontend(IWin32Window Owner = null);
     }
 ~~~~~~~~~~~~~~~~~~~~~~~~
 

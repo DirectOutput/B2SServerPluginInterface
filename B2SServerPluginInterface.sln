@@ -12,12 +12,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Documentation", "Documentat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DoxygenConfig", "DoxygenConfig", "{8CD6D9E9-AD5F-488A-B1CC-4B353B81D2AE}"
 	ProjectSection(SolutionItems) = preProject
+		DoxygenConfig\directoutputstyle.css = DoxygenConfig\directoutputstyle.css
 		DoxygenConfig\DoxygenConfigFile_Github = DoxygenConfig\DoxygenConfigFile_Github
 		DoxygenConfig\DoxygenConfigFile_Local = DoxygenConfig\DoxygenConfigFile_Local
-		DoxygenConfig\footer.html = DoxygenConfig\footer.html
+		DoxygenConfig\footer_Github.html = DoxygenConfig\footer_Github.html
+		DoxygenConfig\footer_local.html = DoxygenConfig\footer_local.html
 		DoxygenConfig\header_Github.html = DoxygenConfig\header_Github.html
 		DoxygenConfig\header_local.html = DoxygenConfig\header_local.html
-		DoxygenConfig\style.css = DoxygenConfig\style.css
 	EndProjectSection
 EndProject
 Global

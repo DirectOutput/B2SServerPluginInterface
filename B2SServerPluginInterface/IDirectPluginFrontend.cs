@@ -1,4 +1,5 @@
-﻿namespace B2SServerPluginInterface
+﻿using System.Windows.Forms;
+namespace B2SServerPluginInterface
 {
     /// <summary>
     /// Optional interface for plugins providing some kind of frontend (e.g. a configuration window).<br/>
@@ -10,6 +11,7 @@
         /// <summary>
         /// This method is called by the plugin host (B2S.Server) to tell the plugin to open its frontend.
         /// </summary>
-        void PluginShowFrontend();
+        /// <param name="Owner">(optional) The owner window for the frontend.</param>
+        void PluginShowFrontend(IWin32Window Owner = null);
     }
 }
