@@ -39,7 +39,7 @@ namespace B2SServerPluginInterface
         /// This method is called, when new data from Pinmame is available.
         /// \remark Make implementations of this method as fast as possible. Delays in this method will slow down the whole virtual pinball system. The best solution is to put the data in a queue and process it in a independent thread.
         /// </summary>
-        /// <param name="TableElementTypeChar">Char representing the table element type (S=Solenoid, W=Switch, L=Lamp, M=Mech, G=GI, ?=Unknown table element type).</param>
+        /// <param name="TableElementTypeChar">Char representing the table element type (S=Solenoid, W=Switch, L=Lamp, M=Mech, G=GI, E=EMTable, ?=Unknown table element type).</param>
         /// <param name="Number">The number of the table element.</param>
         /// <param name="Value">The value of the table element.</param>
         void DataReceive(char TableElementTypeChar, int Number, int Value);
