@@ -18,7 +18,8 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="directoutputstyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -108,13 +109,14 @@ $(document).ready(function(){initNavTree('_i_direct_plugin_frontend_8cs_source.h
 <div class="title">IDirectPluginFrontend.cs</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_i_direct_plugin_frontend_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿namespace B2SServerPluginInterface</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="code" href="interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_frontend.html">    8</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">interface </span><a class="code" href="interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_frontend.html" title="Optional interface for plugins providing some kind of frontend (e.g. a configuration window)...">IDirectPluginFrontend</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordtype">void</span> PluginShowFrontend();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<a href="_i_direct_plugin_frontend_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿using System.Windows.Forms;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">namespace </span>B2SServerPluginInterface</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="code" href="interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_frontend.html">    9</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">interface </span><a class="code" href="interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_frontend.html" title="Optional interface for plugins providing some kind of frontend (e.g. a configuration window)...">IDirectPluginFrontend</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_frontend.html#aacf67f7d4d58d6fa57a4e2d7e00b032a" title="This method is called by the plugin host (B2S.Server) to tell the plugin to open its frontend...">PluginShowFrontend</a>(Form Owner = null);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
@@ -122,10 +124,18 @@ $(document).ready(function(){initNavTree('_i_direct_plugin_frontend_8cs_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_79a924eb60f5d1318026ae48cf8e4079.html">B2SServerPluginInterface</a></li><li class="navelem"><a class="el" href="_i_direct_plugin_frontend_8cs.html">IDirectPluginFrontend.cs</a></li>
-    <li class="footer">Generated on Sat Apr 13 2013 17:04:21 for B2S.Server Plugin Interface by
+    <li class="footer">Generated on Mon May 20 2013 12:37:18 for B2S.Server Plugin Interface by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
 </div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-39987816-2', 'github.io');
+  ga('send', 'pageview');
+</script>
 </body>
 </html>

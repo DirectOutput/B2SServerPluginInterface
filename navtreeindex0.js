@@ -30,7 +30,7 @@ var NAVTREEINDEX0 =
 "interface_b2_s_server_plugin_interface_1_1_i_direct_plugin.html#a3fe727f3c735f3eba25112bb16851304":[5,0,0,0,2],
 "interface_b2_s_server_plugin_interface_1_1_i_direct_plugin.html#a8aa1d887c6781a5bca75458c8e0075a5":[5,0,0,0,0],
 "interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_frontend.html":[5,0,0,1],
-"interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_frontend.html#a2395e3c6f9a1e5a62b43169ec83efc56":[5,0,0,1,0],
+"interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_frontend.html#aacf67f7d4d58d6fa57a4e2d7e00b032a":[5,0,0,1,0],
 "interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_pin_mame.html":[5,0,0,2],
 "interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_pin_mame.html#a2da015ae36530f9648b6384decb0655e":[5,0,0,2,0],
 "interface_b2_s_server_plugin_interface_1_1_i_direct_plugin_pin_mame.html#a92416bf29393dff9ee615d94221e6f89":[5,0,0,2,2],

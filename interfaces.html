@@ -18,7 +18,8 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="directoutputstyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -134,7 +135,8 @@ IDirectPlugin Interface</h1>
 <h1><a class="anchor" id="interfaces_idirectpluginfrontend"></a>
 IDirectPluginFrontEnd Interface</h1>
 <p>If a plugin has some frontend (e.g. configuration window) it is a good choice to implement the IDirectPluginFrontEnd interface. This interface will allow the host application to open the frontend when necessary.</p>
-<p>~~~~~~~~~~~~~~~~~~~~~~~~~(.cs) public interface IDirectPluginFrontend { void PluginShowFrontend(); } ~~~~~~~~~~~~~~~~~~~~~~~~</p>
+<p>The optional Owner parameter (make sure your implementation does also accept calls with null for the parameter) is used to pass a reference to the owner window for the frontend. This allows to ensure that your frontend windows are centered on the call window and/or that the frontend windows are put on the same screen as the calling appilcation.</p>
+<p>~~~~~~~~~~~~~~~~~~~~~~~~~(.cs) public interface IDirectPluginFrontend { void PluginShowFrontend(Form Owner = null); } ~~~~~~~~~~~~~~~~~~~~~~~~</p>
 <p>See the section on classes for more information about this interface and the description of its members. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
@@ -142,10 +144,18 @@ IDirectPluginFrontEnd Interface</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 13 2013 17:04:21 for B2S.Server Plugin Interface by
+    <li class="footer">Generated on Mon May 20 2013 12:37:18 for B2S.Server Plugin Interface by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
 </div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-39987816-2', 'github.io');
+  ga('send', 'pageview');
+</script>
 </body>
 </html>
