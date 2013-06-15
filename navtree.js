@@ -12,6 +12,7 @@ var NAVTREE =
       [ "IDirectPluginFrontEnd Interface", "interfaces.html#interfaces_idirectpluginfrontend", null ]
     ] ],
     [ "Changing and extending the library", "change.html", null ],
+    [ "History", "_history.html", null ],
     [ "About", "md_99__main_page_and_about.html", null ],
     [ "Packages", null, [
       [ "Packages", "namespaces.html", "namespaces" ]

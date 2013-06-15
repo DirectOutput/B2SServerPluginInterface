@@ -131,7 +131,7 @@ Public Member Functions</h2></td></tr>
  This is the last method called, before a plugin is discared. This method is also called, after a undhandled exception has occured in a plugin.  <a href="#a186cb33d0df723127f5b076372cdba58">More...</a><br/></td></tr>
 <tr class="separator:a186cb33d0df723127f5b076372cdba58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8aa1d887c6781a5bca75458c8e0075a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_b2_s_server_plugin_interface_1_1_i_direct_plugin.html#a8aa1d887c6781a5bca75458c8e0075a5">DataReceive</a> (char TableElementTypeChar, int Number, int Value)</td></tr>
-<tr class="memdesc:a8aa1d887c6781a5bca75458c8e0075a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called, when new data from Pinmame is available.  <a href="#a8aa1d887c6781a5bca75458c8e0075a5">More...</a><br/></td></tr>
+<tr class="memdesc:a8aa1d887c6781a5bca75458c8e0075a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called, when new data from Pinmame or the B2SSetData command for EMTables is available.  <a href="#a8aa1d887c6781a5bca75458c8e0075a5">More...</a><br/></td></tr>
 <tr class="separator:a8aa1d887c6781a5bca75458c8e0075a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
@@ -179,11 +179,11 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This method is called, when new data from Pinmame is available. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>Make implementations of this method as fast as possible. Delays in this method will slow down the whole virtual pinball system. The best solution is to put the data in a queue and process it in a independent thread. </dd></dl>
+<p>This method is called, when new data from Pinmame or the B2SSetData command for EMTables is available. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>Make implementations of this method as fast as possible! Delays in this method will slow down the whole virtual pinball system. The best solution is to put the data in a queue and process it in a independent thread. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">TableElementTypeChar</td><td>Char representing the table element type (S=Solenoid, W=Switch, L=Lamp, M=Mech, G=GI, E=EMTable, ?=Unknown table element type).</td></tr>
+    <tr><td class="paramname">TableElementTypeChar</td><td>Char representing the table element type (S=Solenoid, W=Switch, L=Lamp, M=Mech, G=GI, E=EMTable, D=Led, ?=Unknown table element type).</td></tr>
     <tr><td class="paramname">Number</td><td>The number of the table element.</td></tr>
     <tr><td class="paramname">Value</td><td>The value of the table element.</td></tr>
   </table>
@@ -283,7 +283,7 @@ Properties</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_b2_s_server_plugin_interface.html">B2SServerPluginInterface</a></li><li class="navelem"><a class="el" href="interface_b2_s_server_plugin_interface_1_1_i_direct_plugin.html">IDirectPlugin</a></li>
-    <li class="footer">Generated on Mon May 20 2013 12:37:18 for B2S.Server Plugin Interface by
+    <li class="footer">Generated on Sat Jun 15 2013 12:55:09 for B2S.Server Plugin Interface by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
