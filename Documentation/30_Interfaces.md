@@ -7,7 +7,7 @@ The IDirectPlugin interface is the main interface for plugins. All plugins must 
 
 The interface implementation looks as follows (if the comment are removed):
 
-~~~~~~~~~~~~~~~~~~~~~~~~~(.cs)
+~~~~~~~~~~~~~~~~~~~~~~~~~{.cs}
     public interface IDirectPlugin
     {
         string Name { get; }
@@ -28,7 +28,7 @@ This optional interface allows a plugin to receive updastes on important PinMame
 
 The interface is implemented as follows:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~(.cs)
+~~~~~~~~~~~~~~~~~~~~~~~~~{.cs}
     public interface IDirectPluginPinMame
     {
         void PinMameRun();
@@ -50,7 +50,7 @@ If a plugin has some frontend (e.g. configuration window) it is a good choice to
 
 The optional Owner parameter (make sure your implementation does also accept calls with null for the parameter) is used to pass a reference to the owner window for the frontend. This allows to ensure that your frontend windows are centered on the call window and/or that the frontend windows are put on the same screen as the calling appilcation.
 
-~~~~~~~~~~~~~~~~~~~~~~~~~(.cs)
+~~~~~~~~~~~~~~~~~~~~~~~~~{.cs}
     public interface IDirectPluginFrontend
     {
         void PluginShowFrontend(Form Owner = null);
