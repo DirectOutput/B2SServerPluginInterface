@@ -1,16 +1,15 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // Allgemeine Informationen über eine Assembly werden über die folgenden 
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die mit einer Assembly verknüpft sind.
-[assembly: AssemblyTitle("B2SServerPlugin")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("B2SServerPluginInterface")]
+[assembly: AssemblyDescription("Interface for plugins for the B2S.Server. See http://directoutput.github.io/B2SServerPluginInterface/ for details.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("B2SServerPlugin")]
-[assembly: AssemblyCopyright("Copyright ©  2013")]
+[assembly: AssemblyProduct("B2SServerPluginInterface")]
+[assembly: AssemblyCopyright("Copyright © 2013 by Herweh and Swisslizard")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +31,5 @@ using System.Runtime.InteropServices;
 // Sie können alle Werte angeben oder die standardmäßigen Build- und Revisionsnummern 
 // übernehmen, indem Sie "*" eingeben:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.5.0.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
 

@@ -41,6 +41,7 @@
     <Content Include="img\B2SServerPluginInterface.png" />
     <Content Include="img\B2SServerPluginInterface_small.png" />
     <Content Include="img\swisslizard.png" />
+    <Content Include="PackageReadMe\Release.txt" />
     <None Include="99_MainPageAndAbout.md" />
     <Content Include="img\Herweh.png" />
     <None Include="10_Download and Using.md" />
