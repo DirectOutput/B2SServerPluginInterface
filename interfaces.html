@@ -108,43 +108,48 @@ $(document).ready(function(){initNavTree('interfaces.html','');});
 IDirectPlugin Interface</h1>
 <p>The IDirectPlugin interface is the main interface for plugins. All plugins must implement this interface. Otherwise they will not be recognized by the B2S.Server or other applications hosting the plugin.</p>
 <p>The interface implementation looks as follows (if the comment are removed):</p>
-<p>~~~~~~~~~~~~~~~~~~~~~~~~~(.cs) public interface IDirectPlugin { string Name { get; }</p>
-<p>void PluginInit(string TableFilename, string RomName = "");</p>
-<p>void PluginFinish();</p>
-<p>void DataReceive(char TableElementTypeChar, int Number, int Value); } </p>
-<div class="fragment"><div class="line">See the section on classes <span class="keywordflow">for</span> more information about <span class="keyword">this</span> <span class="keyword">interface </span>and the description of its members.</div>
+<div class="fragment"><div class="line"><span class="keyword">public</span> <span class="keyword">interface </span>IDirectPlugin</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordtype">string</span> Name { <span class="keyword">get</span>; }</div>
 <div class="line"></div>
-<div class="line">@section interfaces_idirectpluginpinmame IDirectPluginPinMame Interface</div>
+<div class="line">    <span class="keywordtype">void</span> PluginInit(<span class="keywordtype">string</span> TableFilename, <span class="keywordtype">string</span> RomName = <span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"></div>
-<div class="line">This optional interface allows a plugin to receive updastes on important PinMame actions like Run, Stop and Pause.</div>
+<div class="line">    <span class="keywordtype">void</span> PluginFinish();</div>
 <div class="line"></div>
-<div class="line">The interface is implemented as follows:</div>
+<div class="line">    <span class="keywordtype">void</span> DataReceive(<span class="keywordtype">char</span> TableElementTypeChar, <span class="keywordtype">int</span> Number, <span class="keywordtype">int</span> Value);</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>See the section on classes for more information about this interface and the description of its members.</p>
+<h1><a class="anchor" id="interfaces_idirectpluginpinmame"></a>
+IDirectPluginPinMame Interface</h1>
+<p>This optional interface allows a plugin to receive updastes on important PinMame actions like Run, Stop and Pause.</p>
+<p>The interface is implemented as follows:</p>
+<div class="fragment"><div class="line"><span class="keyword">public</span> <span class="keyword">interface </span>IDirectPluginPinMame</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordtype">void</span> PinMameRun();</div>
 <div class="line"></div>
-<div class="line">~~~~~~~~~~~~~~~~~~~~~~~~~(.cs)</div>
-<div class="line">    <span class="keyword">public</span> interface IDirectPluginPinMame</div>
-<div class="line">    {</div>
-<div class="line">        <span class="keywordtype">void</span> PinMameRun();</div>
+<div class="line">    <span class="keywordtype">void</span> PinMamePause();</div>
 <div class="line"></div>
-<div class="line">        <span class="keywordtype">void</span> PinMamePause();</div>
+<div class="line">    <span class="keywordtype">void</span> PinMameContinue();</div>
 <div class="line"></div>
-<div class="line">        <span class="keywordtype">void</span> PinMameContinue();</div>
-<div class="line"></div>
-<div class="line">        <span class="keywordtype">void</span> PinMameStop();</div>
-<div class="line">    }</div>
+<div class="line">    <span class="keywordtype">void</span> PinMameStop();</div>
+<div class="line">}</div>
 </div><!-- fragment --><p>See the section on classes for more information about this interface and the description of its members.</p>
 <h1><a class="anchor" id="interfaces_idirectpluginfrontend"></a>
 IDirectPluginFrontEnd Interface</h1>
 <p>If a plugin has some frontend (e.g. configuration window) it is a good choice to implement the IDirectPluginFrontEnd interface. This interface will allow the host application to open the frontend when necessary.</p>
 <p>The optional Owner parameter (make sure your implementation does also accept calls with null for the parameter) is used to pass a reference to the owner window for the frontend. This allows to ensure that your frontend windows are centered on the call window and/or that the frontend windows are put on the same screen as the calling appilcation.</p>
-<p>~~~~~~~~~~~~~~~~~~~~~~~~~(.cs) public interface IDirectPluginFrontend { void PluginShowFrontend(Form Owner = null); } ~~~~~~~~~~~~~~~~~~~~~~~~</p>
-<p>See the section on classes for more information about this interface and the description of its members. </p>
+<div class="fragment"><div class="line"><span class="keyword">public</span> <span class="keyword">interface </span>IDirectPluginFrontend</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordtype">void</span> PluginShowFrontend(Form Owner = null);</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>See the section on classes for more information about this interface and the description of its members. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon May 20 2013 12:37:18 for B2S.Server Plugin Interface by
+    <li class="footer">Generated on Sat Jun 15 2013 13:53:47 for B2S.Server Plugin Interface by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
