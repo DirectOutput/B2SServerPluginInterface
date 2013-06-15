@@ -3,7 +3,7 @@
 The B2S.Server has been implemented by Stefan/<a href="http://www.vpforums.org/index.php?showuser=57523">Herweh</a>. He has been kind enough to add a plugin infrasturucture to the B2S.Server, so other libraries can listen to the dataflow of Pinmame as well.
 \image html Herweh.png
 
-The B2SServerPluginInterface.dll has been implemented by <a href="http://www.vpforums.org/index.php?showuser=58068">SwissLizard</a>.
+The B2SServerPluginInterface.dll has been implemented by <a href="http://vpuniverse.com/forums/user/668-swisslizard/">SwissLizard</a>.
 \image html swisslizard.png 
 
 \mainpage notitle
