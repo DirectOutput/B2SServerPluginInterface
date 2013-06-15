@@ -5,7 +5,7 @@
 
 The B2SServerPluginInterface.dll can be downloaded as follows:
 
-- Download from .............................
+- Download from https://drive.google.com/folderview?id=0B_qmbXA56OKSYmtZdm9JY3N3bkE&usp=sharing
 - The B2SServerPluginInterface.dll is also part of the deployment package of the B2S.Server.
 
 \section downloadusing_downloadsource Download source code

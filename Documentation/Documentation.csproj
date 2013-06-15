@@ -38,6 +38,7 @@
   </PropertyGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="90_History.md" />
     <Content Include="img\B2SServerPluginInterface.png" />
     <Content Include="img\B2SServerPluginInterface_small.png" />
     <Content Include="img\swisslizard.png" />

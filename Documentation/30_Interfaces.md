@@ -41,7 +41,6 @@ The interface is implemented as follows:
     }
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-
 See the section on classes for more information about this interface and the description of its members.
 
 
